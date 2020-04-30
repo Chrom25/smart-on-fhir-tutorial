@@ -17366,8 +17366,6 @@ BBClient.authorize = function(params, errback){
     params.client.redirect_uri = relative(params.client.redirect_uri);
   }
 
-  params.client.redirect_uri = 'https://localhost'
-
   var launch = urlParam("launch");
   if (launch){
     if (!params.client.scope.match(/launch/)){
